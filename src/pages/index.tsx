@@ -194,9 +194,12 @@ export default function Home() {
             className="mt-14 h-full w-full xl:mt-0"
           >
             <Suspense fallback={<span>Loading...</span>}>
-              <img
-                src="abc.png"
-                className="w-full h-full object-contain"
+              <Image
+                src="/abc.png"
+                className="w-full h-full object-contain" alt={""}
+                width={600}
+                                height={300}
+                                quality={100}
               />
             </Suspense>
           </div>
