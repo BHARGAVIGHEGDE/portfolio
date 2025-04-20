@@ -83,6 +83,7 @@ export default function Container(props: ContainerProps) {
   const meta = {
     title: "Portfolio",
     image: "/download.jpg",
+    
     type: "website",
     ...customMeta,
   };
