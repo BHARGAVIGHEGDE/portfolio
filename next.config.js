@@ -7,10 +7,11 @@ import WithPWA from "next-pwa";
 
 const withPWA = WithPWA({
   dest: "public",
-  disable: process.env.NODE_ENV === "development",
+  disable: process.env.NODE_ENV === "development", // Disable PWA in development mode
   register: true,
   scope: "/",
   sw: "service-worker.js",
+  buildExcludes: [/workbox-.*\.js$/], // Exclude workbox files from being bundled
 });
 
 /**
@@ -29,6 +30,17 @@ const config = withPWA({
     locales: ["en"],
     defaultLocale: "en",
   },
+
+ webpack: (config) => {
+  if (!Array.isArray(config.externals)) {
+    config.externals = []; // Ensure it's an array
+  }
+  
+  config.externals.push("workbox"); // Adding "workbox" correctly
+  
+  return config;
+}
+
 });
 
 export default config;

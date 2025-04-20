@@ -25,8 +25,9 @@
     "framer-motion": "^10.18.0",
     "locomotive-scroll": "5.0.0-beta.11",
     "lucide-react": "^0.314.0",
+    "module": "^1.2.5",
     "motion": "^10.17.0",
-    "next": "^14.0.4",
+    "next": "^15.3.1",
     "next-pwa": "^5.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -52,7 +53,8 @@
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
     "tailwindcss": "^3.3.5",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "workbox-build": "^7.3.0"
   },
   "ct3aMetadata": {
     "initVersion": "7.26.0"

@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn, scrollTo } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
-import { useRouter } from "next/router";
 import Preloader from "@/components/Preloader";
 import styles from "@/styles/Container.module.css";
 
@@ -79,7 +78,6 @@ export default function Container(props: ContainerProps) {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const { children, ...customMeta } = props;
-  const router = useRouter();
   const meta = {
     title: "Portfolio",
     image: "/download.jpg",
