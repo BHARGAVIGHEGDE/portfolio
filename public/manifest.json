@@ -1,0 +1,9 @@
+{
+    "theme_color": "black",
+    "background_color": "black",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "splash_pages": null
+}
